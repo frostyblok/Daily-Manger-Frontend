@@ -1,0 +1,50 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .site-brand {
+    color: white;
+    flex: 1;
+    a {
+      padding-left: 10px;
+      color: white;
+      &:hover {
+        color: wheat;
+      }
+    }
+  }
+  .user-section {
+    padding-top: 5px;
+    a {
+      padding-left: 15px;
+      color: white;
+    }
+  }
+}
+.footer-copyright {
+  color: white;
+}
+.auth-page {
+  height: 87vh;
+  background: #fbfafa;
+  .auth-card {
+    border: 1px solid #ebe5e5;;
+    box-shadow: 1px 3px 1px 1px #e7e4e4;
+    margin: auto;
+    padding: 20px;
+    .text-center {
+      margin-bottom: 30px;
+    }
+    .form-group input {
+      font-size: 12px;
+    }
+    .btn {
+      display: block;
+      margin: 35px auto 0px;
+    }
+    .account-prompt-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  }
+}
