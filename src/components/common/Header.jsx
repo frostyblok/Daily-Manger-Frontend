@@ -15,7 +15,7 @@ import './common.scss';
           </div>
           <div className="user-section">
             <Link to="/login">Signin</Link>
-            <Link to="#">Signup</Link>
+            <Link to="/signup">Signup</Link>
           </div>
         </div>
       </div>
