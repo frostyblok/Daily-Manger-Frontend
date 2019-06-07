@@ -1,21 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const LoginForm = ({onSubmit, onChange, loginBtn}) => {
+const SignupForm = ({onSubmit, onChange, signupBtn}) => {
   return ( 
     <form onSubmit={onSubmit}>
+      <div className="form-group">
+        <input type="text" className="form-control" onChange={(event) => onChange(event)} id="name" placeholder="Enter name" required />
+      </div>
       <div className="form-group">
         <input type="email" className="form-control" onChange={(event) => onChange(event)} id="email" placeholder="Enter email" required />
       </div>
       <div className="form-group">
         <input type="password" className="form-control" onChange={(event) => onChange(event)} id="password" placeholder="Password" required />
       </div>
-      <button type="submit" className="btn btn-primary">{loginBtn}</button>
+      <button type="submit" className="btn btn-primary">{signupBtn}</button>
       <div className="account-prompt-text text-center">
-        <p>Don't have an account yet? <Link to="/signup">signup here</Link></p>
+        <p>Already have an account? <Link to="/login">login here</Link></p>
       </div>
     </form>
    );
 }
  
-export default LoginForm;
+export default SignupForm;
