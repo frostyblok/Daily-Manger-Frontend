@@ -6,7 +6,7 @@ import { LOGIN_USER, AUTH_ERROR, SIGNUP_USER, LOADING } from './types';
 const loginUserAction = payload => ({type: LOGIN_USER, payload});
 const signupUserAction = payload => ({ type: SIGNUP_USER, payload });
 const authError = message => ({ type: AUTH_ERROR, message });
-const loaderAction = status => ({ type: LOADING, status });
+export const loaderAction = status => ({ type: LOADING, status });
 
 export const loginUser = user => async (dispatch) => {
   dispatch(loaderAction(true));

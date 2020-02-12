@@ -4,4 +4,53 @@
     height: 250px;
     margin-right: 20px;
   }
+  .title { 
+    font-size: 20px;
+    margin: 15px 0px 40px;
+  }
+  .date {
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0px 0px 50px;
+  }
+  a {
+    font-size: 14px;
+  }
+  .create-icon {
+    position: fixed;
+    right: 20px;
+    font-size: 39px;
+  }
+}
+.modals{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+  overflow: auto;
+  animation: popup 1s;
+  .modal-content{
+    background-color: whitesmoke;
+    margin: 10% auto;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 25px;
+    .modal-title {
+      margin: 0px 0px 30px;
+    }
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+  }
+}
+@keyframes popup {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
